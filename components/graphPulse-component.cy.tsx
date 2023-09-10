@@ -1,21 +1,16 @@
-import AboutComponent from './about-component'
+import GraphPulseComponent from "./graphPulse-component"
 /* eslint-disable */
 // Disable ESLint to prevent failing linting inside the Next.js repo.
 // If you're using ESLint on your project, we recommend installing the ESLint Cypress plugin instead:
 // https://github.com/cypress-io/eslint-plugin-cypress
 
 // Cypress Component Test
-describe('<AboutComponent />', () => {
+describe('<GraphPulseComponent />', () => {
   it('should render and display expected content', () => {
     // Mount the React component for the About page
-    cy.mount(<AboutComponent />)
+    cy.mount(<GraphPulseComponent labels={[]} dataS={[]} dataT={[]} />)
 
-    // The new page should contain an h1 with "About page"
-    cy.get('h1').contains('About Page')
-
-    // Validate that a link with the expected URL is present
-    // *Following* the link is better suited to an E2E test
-    cy.get('a[href="/"]').should('be.visible')
+    cy.get('h1').contains('Это тоже')
   })
 })
 

@@ -10,16 +10,25 @@
     "component:headless": "cypress run --component"
   },
   "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.7.4",
+    "@supabase/supabase-js": "^2.33.1",
+    "chart.js": "^4.4.0",
+    "faker": "^5.5.3",
     "next": "latest",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.0.6",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "cypress": "12.3.0",
+    "autoprefixer": "^10.4.15",
+    "cypress": "^13.1.0",
+    "postcss": "^8.4.29",
     "start-server-and-test": "1.15.2",
+    "supabase": "^1.93.0",
+    "tailwindcss": "^3.3.3",
     "typescript": "4.7.4"
   }
 }
